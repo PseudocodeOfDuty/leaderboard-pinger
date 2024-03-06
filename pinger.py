@@ -36,7 +36,7 @@ def ping_url():
     except Exception as e:
         print(f"Error: {e}")
 
-schedule.every(15).minutes.do(ping_url)
+schedule.every(5).minutes.do(ping_url)
 
 ping_url()
 while True:
